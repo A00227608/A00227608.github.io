@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preguntas Html y Css</title>
+        <style>
+           body{
+                background-color: peru;
+                
+           }
+            #caja{
+                color: white;
+                background-color: red;
+                width: 300px;
+                height: 200px;
+                margin: 10px  green;
+                padding: 10px  yellow;
+                border: 10px  black;
+            }
+            .introduction{
+                background-color: magenta;
+                color: navajowhite
+            }
+            .etiquetasbasicas{
+                background-color: black;
+                color:salmon
+            }
+            table, th, td{
+                border: 2px solid salmon;
+            }
+            .basiccss{
+                margin: 10px;
+                display: flex;
+                flex-direction:row-reverse;
+                background-color: aqua;
+                color:black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>1. Html</h1>
+        <section>
+        <div class="introduction">
+            <h1> Introduction </h1>
+                <ul>
+                    <li> <h3>¿Qué es HTML?</h3>
+                        <p> HTML es el componente mas básico del internet, es lo que organiza la estructura de una página web y permite acceder a otras páginas web o elementos, el lenguaje utiliza etiquetas para definir lo que se va a mostrar en pantalla, ejemplo: header, imágenes,footer.</p>
+                     </li>
+                     <li>
+                        <h3>Explica las etiquetas "head" y "body"</h3>
+                        <p>
+                        Head se encarga proveer la información general de los documentos html, provee datos como el título, metadatos, scripts o estilos.
+                        </p>
+                        <p>
+                        La etiqueta body representa el contenido del documento, y solo puede haber una etiqueta por documento.
+                        </p>
+                     </li>
+                </ul>
+        </section>
+        </div>
+        <section>
+        <div class="etiquetasbasicas">
+            <h1> Etiquetas Basicas</h1>
+                <ul>
+                    <li>
+                        <section>
+                            <h3>Explica las etiquetas section,article,aside,header y footer.</h3>
+                            <ul>
+                                <li>
+                                    La etiqueta section representa una sección por separado en un documento.
+                                </li>
+                                <li>
+                                    La etiqueta article representa una composición auto-contenida, que se quiere que sea reutilizable de manera independiente.
+                                </li>
+                                <li>
+                                    la etiqueta aside es una sección de una pagina donde el contenido esta relacionado contenido principal del documento, se puede utilizar para colocar definiciones.
+                                </li>
+                                <li>
+                                    Header representa el contenido introductorio, se utiliza para incluir el título de algo, fecha, etc.
+                                </li>
+                                <li>
+                                    La etiqueta footer, representa el pie de página para su ancestro más cercano.
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><h3>Lista ordenada</h3>
+                        <ol>
+                            <li>papa</li>
+                            <li>chorizo</li>
+                            <li>queso</li>
+                        </ol>
+                    </li>
+                    <li><h3>Crea una tabla</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Juego</th>
+                                    <th scope="col">Genero</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>Call of duty</td>
+                                <td>FPS</td>
+                                </tr>
+                                <tr>
+                                    <td>Minecraft</td>
+                                    <td>Sandbox</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+        </section>
+    </div>
+
+
+        <h1>
+            2. CSS
+        </h1>
+        <section>
+            <h1>Introducción</h1>
+            <ul>
+                <li><h3>¿Qué es CSS?</h3>
+                    <p>CSS o Cascading Style Sheets, es el lenguaje de estilos para representar documentos html o XML, es lo que le agrega el diseño a los elementos, como color, tamaño, fuente, posición, etc.</p>
+                </li>
+                <li><h3>¿Cuál es el proposito?</h3>
+                    <p>Añadir diseño a una página.</p>
+                </li>
+                <li><h3>¿Como aplicas CSS a un documento html</h3>
+                    <ul>
+                        <li>Utilizando style al principio del documento.</li>
+                        <li>Añadiendo una referencia a un documento .css.</li>
+                        <li>Utilizando style directamente en un elemento.</li>
+                    </ul>
+                </li>
+                <li><h3>¿Que es un selector? que es una regla en CSS?</h3>
+                    <p>Un selector indica que reglas, es decir, propiedades, se le van a aplicar a uno o más elementos en específico.</p>
+                </li>
+            </ul>
+        </section>
+    <div class="basiccss">
+        <section>
+            <h1>Basic CSS</h1>
+            <ul>
+                <li><h3>Tag Selector</h3>
+                    <p>Selecciona todos los elementos que compartan etiqueta.</p>
+                </li>
+                <li><h3>Class Selector</h3>
+                    <p>Selecciona todos los elementos de una clase. ejemplo: .nombredeclase</p>
+                </li>
+                <li><h3>Tag and Class Selector</h3>
+                    <p>Selecciona los elementos que compartan la misma tag y clase. ejemplo: tag.nombredeclase</p>
+                </li>
+                <li><h3>Id Selector</h3>
+                    <p>Selecciona el elemento con el id especificado. ejemplo: #id</p>
+                </li>
+                <li><h3>¿Qué es una clase? ¿Qué es un id? ¿Cómo se relacionan con CSS?</h3>
+                    <p>Una clase es un grupo de elementos, y un id es un indicador único para cada elemento. Estos estan relacionados con css ya que nos ayudan a definir reglas especificas para este grupo de elementos</p>
+                </li>
+                <li><h3>Explica el CSS Box Model y muestra un ejemplo</h3>
+                <p>El modelo de caja de css es una caja que abarca cualquiere elemento de css, esta dividida en margin,border,padding y content: Ejemplo</p>
+                <div id="caja">contenido</div>
+                </li>
+                <li><h3>¿Como cambias el color  de la fuente usando Css</h3>
+                <P>con "color"</P>
+            </li>
+            </ul>
+        </section>
+    </div>
+    </body>
+</html>
+ 
