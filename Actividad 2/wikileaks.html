@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>WikiLeaks</title>
+        <style>
+            body {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+           .logo a{
+                text-decoration: none;
+                color: #093a41;
+                
+           }
+           .logo {
+            margin-right: 50px;
+           }
+           .menu a{
+                text-decoration: none;
+                color: grey;
+                font-weight: 500;
+           }
+           .botones-laterales a{
+                text-decoration: none;
+                color: black;
+           }
+
+           .header{
+                display: flex;
+           }
+           .menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+                padding: 10px;
+                margin-right: 1000px;
+           }
+           .botones-laterales {
+                display:flex;
+                flex-direction: row;
+                gap: 50px;
+                padding: 33px;
+                
+
+           }
+           #donate{
+                background-color: red;
+                color:white;
+                padding: 20px;
+                border-radius: 10px;
+                
+                
+           }
+           #submit{
+                background-color: grey;
+                color:white;
+                padding: 20px;
+                border-radius: 10px;
+           }
+           input{
+                display: block;
+                width: 50%;
+                height: 30px;
+                border-radius: 10px;
+                margin: 20px auto;
+           
+            }
+            .categorias{
+                display: flex;
+                flex-wrap: wrap;
+                gap:10px;
+                padding:10px;
+                justify-content: center;
+            }
+            .categorias ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap:10px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .categorias a{
+                text-decoration: none;
+                color: #093a41;
+                font-weight: 700;
+            }
+            .articulo{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: flex-start;
+
+            }
+
+            .articulo a{
+                text-decoration: none;
+                color: black;
+                max-width: 300px;
+            }
+
+            article{
+                display: flex;
+                background-color: gray;
+                align-items: center;
+                border-radius: 30px;
+            }
+            article img{
+                border-radius: 10px;
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h2 class="Logo">
+                <img src="https://wikileaks.org/static/img/wl-logo.png" height="50px" width="100px">
+                <a href="https://wikileaks.org/">WikiLeaks</a>
+            </h2>
+            
+            <div class="menu">
+                <h3> <a href="https://wikileaks.org/-Leaks-.html">Leaks</a></h3>
+                <h3> <a href="https://wikileaks.org/-News-.html">News</a></h3>
+                <h3> <a href="https://wikileaks.org/What-is-WikiLeaks.html">About</a></h3>
+                <h3> <a href="https://wikileaks.org/-Partners-.html">Partners</a></h3>
+            </div>
+            <div class="botones-laterales">
+                <h3> <a id="donate" href="https://shop.wikileaks.org/donate">Donate</a></h3>
+                <h3> <a id="submit" href="https://wikileaks.org/#submit">Submit</a></h3>
+
+        
+             </div>
+        </div>
+        <input type="text" placeholder="Search Keywords">
+        <div class="categorias">
+        <ul>
+            <li> <a href="https://wikileaks.org/+-Intelligence-+.html">Intelligence</a></li>
+            <li> <a href="https://wikileaks.org/+-Global-Economy-+.html">Global Economy</a></li>
+            <li> <a href="https://wikileaks.org/+-International-Politics-+.html">International Politics</a></li>
+            <li> <a href="https://wikileaks.org/+-Corporations-+.html">Corporations</a></li>
+            <li> <a href="https://wikileaks.org/+-Government-+.html">Goverment</a></li>
+            <li> <a href="https://wikileaks.org/+-War-Military-+.html">War & Military</a></li>
+
+        </ul>
+        </div>
+        <h2>Featured</h2>
+        <div class="articulo">
+        <article>
+            <a href="https://wikileaks.org/intolerancenetwork/">
+            <img src="https://wikileaks.org/IMG/arton717.png" width="90px" height="90px">
+            <h4> <b>The intolerance Network</b></h4>
+            <p>Today, 5th August 2021, WikiLeaks publishes "The Intolerance Network" over 17,000 documents from internationally active right wing campaigning organisations HazteOir and CitizenGO.</p>
+            </a>
+        </article>
+        <article>
+            <a href="https://wikileaks.org/plusd/">
+                <img src="https://wikileaks.org/IMG/arton715.png" width="90px" height="90px">
+                <h4><b>PlusD</b></h4>
+                <p>Today, 23rd June 2021, WikiLeaks releases new information from the United Nations High Commissioner for Refugees</p> 
+        </div>    
+        </body>
+    </html>
+
+   
