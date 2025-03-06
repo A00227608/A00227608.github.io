@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+
+
+    </head>
+
+    <body>
+
+
+        <h1>donantes</h1>
+        
+        <div id="listaDonantes">
+
+        </div>
+        
+        
+        <ul>
+            <li><a href="/api/bienvenida">bienvenida</a></li>
+            <li><a href="/escuelas">escuelas</a></li>
+        </ul>
+
+    </body>
+    <script>
+        async function obtenerEscuelas() {
+            //Agregar el url adecuado
+          const listaEscuelas= await fetch('http://localhost:1984/api/donantes');
+          const jsonLE=await listaEscuelas.json();
+          console.log(jsonLE);
+
+          const contenedor = document.getElementById('listaDonantes');
+          contenedor.innerHTML = '';
+  
+         
+          jsonLE.forEach(donante => {
+              const item = document.createElement('li');
+              item.textContent = `nombre: ${donante.nombre} - donacion ${donante.donacion}`;
+              contenedor.appendChild(item);
+          });
+          //Muestra las escuelas en el html
+
+        }  
+    
+        obtenerEscuelas();
+    </script>
+</html>
